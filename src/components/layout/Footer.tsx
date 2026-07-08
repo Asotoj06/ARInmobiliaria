@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/app/assets/logo.png";
 
 export default function Footer() {
   return (
@@ -6,8 +8,8 @@ export default function Footer() {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* Brand & Intro */}
         <div className="col-span-1 md:col-span-2">
-          <Link href="/" className="text-2xl font-serif tracking-widest text-gold font-bold inline-block mb-4">
-            LUXURY<span className="text-bone font-light">ESTATES</span>
+          <Link href="/" className="flex items-center mb-4">
+            <Image src={logo} alt="ARInmobiliaria Logo" width={340} height={340} className="object-contain" />
           </Link>
           <p className="text-sm text-gray-400 max-w-sm">
             Elevando el estándar en bienes raíces. Propiedades exclusivas, servicio incomparable y resultados que superan expectativas.
@@ -40,7 +42,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
-        <p>&copy; {new Date().getFullYear()} Luxury Estates. Todos los derechos reservados. | <Link href="/privacidad" className="hover:text-gold">Aviso de Privacidad</Link></p>
+        <p>&copy; {new Date().getFullYear()} ARInmobiliaria. Todos los derechos reservados. | <Link href="/privacidad" className="hover:text-gold">Aviso de Privacidad</Link></p>
       </div>
     </footer>
   );

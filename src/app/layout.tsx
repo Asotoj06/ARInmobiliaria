@@ -20,21 +20,21 @@ const playfair = Playfair_Display({
 // Configure Global Metadata and Open Graph
 export const metadata: Metadata = {
   title: {
-    default: "Luxury Estates | Propiedades Exclusivas",
-    template: "%s | Luxury Estates",
+    default: "ARInmobiliaria | Propiedades Exclusivas",
+    template: "%s | ARInmobiliaria",
   },
   description: "Descubre las propiedades más exclusivas y de alta gama en tu zona. Compra, renta o vende tu inmueble con expertos.",
   openGraph: {
-    title: "Luxury Estates | Propiedades Exclusivas",
+    title: "ARInmobiliaria | Propiedades Exclusivas",
     description: "La plataforma líder en bienes raíces de lujo. Encuentra tu próxima propiedad soñada.",
-    url: "https://luxuryestates.com",
-    siteName: "Luxury Estates",
+    url: "https://arinmobiliaria.com",
+    siteName: "ARInmobiliaria",
     images: [
       {
         url: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Luxury Estates - Inicio",
+        alt: "ARInmobiliaria - Inicio",
       },
     ],
     locale: "es_MX",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Luxury Estates",
+    title: "ARInmobiliaria",
     description: "Propiedades exclusivas a tu alcance.",
     images: ["https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"],
   },
@@ -56,9 +56,9 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${inter.variable} ${playfair.variable} h-full antialiased`}
+      className={`${inter.variable} ${playfair.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col pt-[72px]">
+      <body className="min-h-screen flex flex-col pt-[72px]">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
